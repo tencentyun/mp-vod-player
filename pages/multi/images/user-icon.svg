@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="68px" viewBox="0 0 68 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>icon user </title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="70.5620313%" y1="113.844008%" x2="14.2860937%" y2="18.7391135%" id="linearGradient-1">
+            <stop stop-color="#006EFF" offset="0%"></stop>
+            <stop stop-color="#00A4FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="查看评论" transform="translate(-41.000000, -833.000000)" fill-rule="nonzero">
+            <g id="分组-copy" transform="translate(41.000000, 833.000000)">
+                <g id="icon-user-">
+                    <circle id="Oval" fill="#E7F2FF" cx="34" cy="34" r="34"></circle>
+                    <path d="M19.31875,51 L16,51 L16,45.0725806 L16,45.0725806 C16.50625,40.8387097 24.38125,37.4516129 34,37.4516129 C43.61875,37.4516129 51.49375,40.8387097 52,45.0725806 L52,45.0725806 L52,51 L48.68125,51 L19.31875,51 Z M34,34.6290323 C28.7125,34.6290323 24.4375,30.4516129 24.4375,25.3145161 C24.4375,20.1774194 28.7125,16 34,16 C39.2875,16 43.5625,20.1774194 43.5625,25.3145161 C43.5625,30.4516129 39.2875,34.6290323 34,34.6290323 Z" id="Shape" fill="url(#linearGradient-1)" opacity="0.362932478"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

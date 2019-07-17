@@ -1,0 +1,38 @@
+<template name="goods_list_tmpl">
+
+  <block wx:if="{{showGoodsList}}">
+    <view class="goods-area">
+
+      <image src="../images/close.svg" class="close" catchtouchend='closeGoodsList'></image>
+      <view class="goods-list">
+        <view class="goods-title">同款商品列表</view>
+
+        <scroll-view scroll-y="true" class="goods-main" scroll-top="0">
+
+          <view class="goods-cont" wx:key="index" wx:for="{{goodsList}}" wx:for-item="item" wx:for-index="index">
+
+          <view class="goods-icon">
+              <image src="{{item.goodsIcon}}"></image>
+            </view>
+            
+            <view class="goods-detail">
+              <view>
+                <text class='goods-name'>{{item.goodsName}}</text>
+              </view>
+              <view class="goods-detail-second">
+                <text class="goods-price">{{item.price}}</text>
+                <text class="goods-link" catchtouchend='gotoGoodsDetail'>查看详情</text>
+              </view>
+            </view>
+
+          </view>
+        </scroll-view>
+
+      </view>
+
+    </view>
+
+  </block>
+
+
+</template>

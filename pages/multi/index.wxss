@@ -1,0 +1,29 @@
+/* miniprogram/pages/multi/index.wxss */
+
+.dark {
+  background-color: #000;
+  color: #eee;
+}
+
+.tab {
+  color: #0055f3;
+}
+
+.tabbar {
+  background-color: #0055f3;
+}
+
+.thumbnail-wrap {
+  padding: 0;
+}
+
+.thumbnail-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000 
+}
+
+.thumbnail {
+  overflow: hidden;
+}

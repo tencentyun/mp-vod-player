@@ -1,0 +1,36 @@
+<template name="operation_tmpl">
+
+  <block wx:if="{{showOperation}}">
+    <view class="operation" >
+
+      <view class="shopcart-area"></view>
+
+      <view class="left-area">
+        <view class="shopcart" catchtouchend='gotoShowGoodsList' id="shopcart-btn">
+          <image src="../images/shopcart.svg"></image>
+          <text>视频同款</text>
+        </view>
+
+        <view class="video-title">
+          <text>{{item.title}}</text>
+        </view>
+
+      </view>
+
+      <view class="right-area">
+
+        <image src="../images/unlike.svg" hidden='{{!isLiked}}' catchtouchend='toggleLike'></image>
+        <image src="../images/like.svg" hidden='{{isLiked}}' catchtouchend='toggleLike'></image>
+        <text>5.6万</text>
+        <image src="../images/share.svg"></image>
+        <image src="../images/message.svg" catchtouchend='toggleComment'></image>
+        <text>9999</text>
+
+      </view>
+
+    </view>
+
+  </block>
+
+
+</template>

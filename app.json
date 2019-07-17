@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/index",
+    "pages/multi/index",
+    "pages/multi/detail/detail",
+    "pages/multi/goods/goods"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "云点播短视频播放器示例",
+    "navigationBarBackgroundColor": "#000",
+    "backgroundColor": "#f8f8f8"
+  },
+  "plugins": {
+    "myPlugin": {
+      "version": "0.0.2",
+      "provider": "wx116d0dd5e6a39ac7"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

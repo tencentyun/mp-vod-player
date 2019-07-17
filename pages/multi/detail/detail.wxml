@@ -1,0 +1,65 @@
+<!--miniprogram/pages/multi/detail/detail.wxml-->
+<import src="./operation_tmpl.wxml" />
+<import src="./comment_tmpl.wxml" />
+<import src="./goods_list_tmpl.wxml" />
+
+<view class='page dark wrap'>
+
+  <template is="comment_tmpl" data="{{list:currCommentList, showComment:showComment, userInput:userInput,commentScrollTop:commentScrollTop}}" />
+
+  <swiper id="videoSwiper" class="swiper-container" vertical="{{true}}" 
+  easing-function='easeOutCubic' bindtouchstart='bindtouchstart' bindtouchend='bindtouchend' bindchange='swiperchange' bindanimationfinish='swiperanimateend' duration="600" current="{{currIndex}}">
+    <swiper-item class="swiper-item-cont" wx:key="index" wx:for="{{list}}" wx:for-item="item" wx:for-index="index">
+      <block>
+        <block wx:if="{{currIndex == index}}">
+
+          <image src="../images/play.svg" style="z-index:10;width:60px;height:60px;position:fixed;top:{{playBtnTop}};left:{{playBtnLeft}}" hidden="{{!showPlayBtn}}"></image>
+
+
+          <image src="{{item.coverImage}}" style="position:absolute;top:{{item.currVideoTop}};left:0;width:{{item.currVideoWidth}};height:{{item.currVideoHeight}};z-index:10" hidden='{{hiddenCover}}'></image>
+
+          <view style="position:absolute;top:{{item.currVideoTop}};left:0;width:{{item.currVideoWidth}};height:{{item.currVideoHeight}}">
+
+            <my-player fileid="{{item.fileid}}" playerid="{{playerid}}"
+            appid="{{item.appid}}" bindtimeupdate="bindtimeupdate" bindplay="bindplay" 
+            binderror="binderror" controls="{{false}}" loop="{{true}}" title="{{item.title}}" showCenterPlayBtn="{{false}}" height="100%" autoplay="{{true}}" width="100%" />
+          </view>
+
+
+          <template is="operation_tmpl" data="{{item:item, showOperation:showOperation, isLiked:isLiked}}" />
+
+          <template is="goods_list_tmpl" data="{{goodsList:currGoodsList, showGoodsList:showGoodsList}}" />
+
+          <view class="slider-container">
+            <view class="left">
+              <text class="">{{currTimeStr}}</text>
+            </view>
+
+            <slider style="display:inline-block" hidden='{{!hiddenCover}}' bindchange="sliderChange" bindchanging="sliderChanging" step="1" value="{{sliderValue}}" backgroundColor="#FFF" activeColor="#FFF" block-color="#FFF" block-size='16' />
+
+            <view class="right">
+              <text class="">{{endTimeStr}}</text>
+            </view>
+          </view>
+
+
+        </block>
+        <block wx:else>
+
+          <view style="position:absolute;top:{{item.currVideoTop}};left:0;width:{{item.currVideoWidth}};height:{{item.currVideoHeight}}">
+            <image src="{{item.coverImage}}" style="width:100%;height:100%;z-index=10"></image>
+          </view>
+
+        </block>
+      </block>
+    </swiper-item>
+  </swiper>
+
+  <!-- 
+
+<image class="" src="{{coverImage}}" style="width:100%;height:100%" hidden='true' />
+-->
+
+
+
+</view>

@@ -1,0 +1,39 @@
+<template name="comment_tmpl">
+
+  <block wx:if="{{showComment}}">
+    <view class="comment-area">
+      <image src="../images/close.svg" class="close" catchtouchend='closeComment'></image>
+      <view class="comment-list">
+        <view class="comment-title">评论</view>
+
+        <scroll-view scroll-y="true" class="comment-main" scroll-top="{{commentScrollTop}}">
+
+          <view class="comment-cont" wx:key="index" wx:for="{{list}}" wx:for-item="item" wx:for-index="index">
+            <view class="user-icon">
+              <image src="{{item.userIcon}}"></image>
+            </view>
+            <view class="comment-detail">
+              <view>
+                <text class='comment-user-name'>{{item.userName}}</text>
+              </view>
+              <view>
+                <text class="comment-content-detail">{{item.content}}</text>
+                <text class="comment-time">{{item.timeStr}}</text>
+              </view>
+            </view>
+
+          </view>
+        </scroll-view>
+
+      </view>
+
+      <view class="comment-input">
+      <input placeholder="请输入神评论" maxlength="10" 
+      auto-focus bindconfirm='sendComment' value="{{userInput}}" cursor-spacing='20'/>
+      </view>
+    </view>
+
+  </block>
+
+
+</template>

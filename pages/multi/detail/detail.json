@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "my-player": "plugin://myPlugin/player"
+  }
+}

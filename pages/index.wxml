@@ -1,0 +1,31 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">腾讯云点播播放器插件</view>
+        <view class="page__desc">腾讯云点播播放器插件提供的完整的视频播放能力，只需获取一个appid和一个fileid，即可在小程序里调用插件播放视频，方便广大开发者快速给用户提供良好的视频体验。</view>
+    </view>
+    <view class="page__bd page__bd_spacing">
+        <view class="kind-list">
+            <block wx:for="{{list}}" wx:key="id">
+                <view class="kind-list__item">
+                    <view id="{{item.id}}" class="weui-flex kind-list__item-hd {{item.open ? 'kind-list__item-hd_show' : ''}}" bindtap="kindToggle">
+                        <view class="weui-flex__item">{{item.name}}</view>
+                        <image class="kind-list__img" src="../images/icon_nav_form.png"></image>
+                    </view>
+                    <view class="kind-list__item-bd {{item.open ? 'kind-list__item-bd_show' : ''}}">
+                        <view class="weui-cells {{item.open ? 'weui-cells_show' : ''}}">
+                            <block wx:for="{{item.pages}}" wx:for-item="page" wx:key="key">
+                                <navigator url="{{page.path}}" class="weui-cell weui-cell_access">
+                                    <view class="weui-cell__bd">{{page.name}}</view>
+                                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                                </navigator>
+                            </block>
+                        </view>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+    <view class="page__ft">
+        
+    </view>
+</view>

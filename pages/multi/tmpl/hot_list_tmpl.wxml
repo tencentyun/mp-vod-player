@@ -1,0 +1,23 @@
+<template name="hot_list_tmpl">
+
+  <block wx:if="{{list && list.length}}">
+    <view class="weui-grids">
+      <block wx:for="{{list}}" wx:key="index">
+        <navigator url="./detail/detail?index={{index}}&ww={{ww}}&wh={{wh}}"
+        class="weui-grid thumbnail-wrap" hover-class="weui-grid_active">
+          <view class='thumbnail-cont' style="width:{{item.thumbnailContWidth}};height:{{item.thumbnailContHeight}}">
+
+            <image class="thumbnail" src="{{item.coverImage}}" style="width:{{item.thumbnailWidth}};height:{{item.thumbnailHeight}}" />
+            
+
+          </view>
+
+        </navigator>
+      </block>
+    </view>
+
+  </block>
+
+
+
+</template>

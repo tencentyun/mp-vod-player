@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160px" height="160px" viewBox="0 0 160 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>播放</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="视频暂停（点击暂停后出现）" transform="translate(-291.000000, -646.000000)">
+            <g id="播放" transform="translate(291.000000, 646.000000)">
+                <circle id="椭圆形" fill-opacity="0.8" fill="#333333" fill-rule="nonzero" cx="80" cy="80" r="80"></circle>
+                <g id="caret-right" transform="translate(36.721311, 27.540984)" fill="#FFFFFF">
+                    <rect id="矩形" opacity="0" x="0" y="0" width="104.918033" height="104.918033"></rect>
+                    <path d="M72.6081321,48.5963887 L33.7366783,14.9502177 C32.2871651,13.7002686 30.1639344,14.8272719 30.1639344,16.8456323 L30.1639344,84.1379742 C30.1639344,86.1563346 32.2871651,87.2833379 33.7366783,86.0333888 L72.6081321,52.3872179 C73.7207866,51.4241424 73.7207866,49.5594642 72.6081321,48.5963887 Z" id="路径"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

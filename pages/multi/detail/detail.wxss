@@ -1,0 +1,237 @@
+/* miniprogram/pages/multi/detail/detail.wxss */
+
+page {
+  height: 100%;
+}
+
+.slider-container {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  background-color: transparent;
+  z-index: 10;
+}
+
+.slider-container .left {
+  width: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.slider-container .right {
+  width: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-container slider {
+  flex: 1;
+}
+
+.swiper-container {
+  height: 100%;
+  overflow: hidden;
+}
+
+.swiper-item-cont {
+  position: relative;
+}
+
+.dark {
+  background-color: #000;
+  color: #eee;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+.operation .left-area {
+  position: fixed;
+  bottom: 100px;
+  left: 15px;
+  width: 140px;
+}
+
+.operation .left-area .shopcart {
+  border-radius: 50px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 10px 0;
+}
+
+.operation .left-area image {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+.operation .left-area text {
+  font-size: 14px;
+}
+
+.operation .left-area .video-title text {
+  font-size: 16px;
+}
+
+.operation .right-area {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  right: 0px;
+  bottom: 60px;
+  width: 60px;
+}
+
+.operation .right-area text {
+  font-size: 14px;
+}
+
+.operation .right-area image {
+  width: 35px;
+  height: 35px;
+  margin-top: 15px;
+}
+
+.comment-area {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 20;
+  min-height: 100px;
+  max-height: 350px;
+}
+
+.comment-area .comment-input {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 15px 10px;
+}
+
+.comment-area image.close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 5px;
+  top: -25px;
+}
+
+.comment-area .comment-title {
+  text-align: center;
+}
+
+.comment-area .comment-main {
+  height: 260px;
+  padding: 5px 10px;
+}
+
+.comment-area .comment-main .comment-cont {
+  margin-bottom: 10px;
+}
+
+.comment-area .comment-main .user-icon {
+  float: left;
+  margin-right: 10px;
+}
+
+.comment-area .comment-main .user-icon image {
+  width: 40px;
+  height: 40px;
+}
+
+.comment-area .comment-main .comment-user-name {
+  font-size: 12px;
+  color: #777;
+}
+
+.comment-area .comment-main .comment-time {
+  font-size: 12px;
+  color: #777;
+  padding-left: 10px;
+}
+
+.comment-area .comment-main .comment-content-detail {
+  font-size: 14px;
+  color: #eee;
+}
+
+.comment-area .gray {
+  color: #eee;
+}
+
+.goods-area {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 20;
+  min-height: 100px;
+  max-height: 350px;
+}
+
+.goods-area image.close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 5px;
+  top: -25px;
+}
+
+.goods-area .goods-title {
+  text-align: center;
+}
+
+.goods-area .goods-main {
+  height: 260px;
+  padding: 5px 0;
+}
+
+.goods-area .goods-main .goods-cont {
+  border-bottom: 1px solid #bbb;
+  padding: 0 20px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.goods-area .goods-main .goods-icon {
+  display: inline-block;
+  margin-right:20px;
+}
+
+.goods-area .goods-main .goods-detail {
+  display: inline-block;
+}
+
+.goods-area .goods-main .goods-icon image {
+  width: 50px;
+  height: 50px;
+}
+
+.goods-area .goods-main .goods-name {
+  font-size: 12px;
+}
+
+.goods-area .goods-main .goods-detail-second{
+  margin-bottom:5px;
+}
+
+.goods-area .goods-main .goods-link {
+  font-size: 14px;
+  background-color: #777;
+  position:absolute;
+  right:20px;
+  padding: 2px 5px;
+}
